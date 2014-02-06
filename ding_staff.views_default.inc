@@ -29,12 +29,8 @@ function ding_staff_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Gendan';
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['pager']['options']['tags']['first'] = '« første';
-  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ forrige';
-  $handler->display->display_options['pager']['options']['tags']['next'] = 'næste ›';
-  $handler->display->display_options['pager']['options']['tags']['last'] = 'sidste »';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* No results behavior: Global: Text area */
@@ -172,7 +168,6 @@ function ding_staff_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: GID from OG membership (for group header)(excluded) */
   $handler->display->display_options['fields']['gid']['id'] = 'gid';
   $handler->display->display_options['fields']['gid']['table'] = 'og_membership';
@@ -191,6 +186,7 @@ function ding_staff_views_default_views() {
   $handler->display->display_options['fields']['user']['label'] = '';
   $handler->display->display_options['fields']['user']['exclude'] = TRUE;
   $handler->display->display_options['fields']['user']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['user']['separator'] = '';
   /* Field: Forename (excluded) */
   $handler->display->display_options['fields']['field_ding_staff_forename']['id'] = 'field_ding_staff_forename';
   $handler->display->display_options['fields']['field_ding_staff_forename']['table'] = 'field_data_field_ding_staff_forename';
@@ -363,6 +359,7 @@ function ding_staff_views_default_views() {
   $handler->display->display_options['fields']['user']['label'] = '';
   $handler->display->display_options['fields']['user']['exclude'] = TRUE;
   $handler->display->display_options['fields']['user']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['user']['separator'] = '';
   /* Field: Forename (excluded) */
   $handler->display->display_options['fields']['field_ding_staff_forename']['id'] = 'field_ding_staff_forename';
   $handler->display->display_options['fields']['field_ding_staff_forename']['table'] = 'field_data_field_ding_staff_forename';

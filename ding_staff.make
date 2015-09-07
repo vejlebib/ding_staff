@@ -10,17 +10,17 @@ projects[cs_adaptive_image][version] = "1.0"
 projects[ding_base][type] = "module"
 projects[ding_base][download][type] = "git"
 projects[ding_base][download][url] = "git@github.com:ding2/ding_base.git"
-projects[ding_base][download][tag] = "v2.0.0"
+projects[ding_base][download][tag] = "7.x-2.2.0"
 
 projects[ding_content][type] = "module"
 projects[ding_content][download][type] = "git"
 projects[ding_content][download][url] = "git@github.com:ding2/ding_content.git"
-projects[ding_content][download][tag] = "v2.0.0"
+projects[ding_content][download][tag] = "7.x-2.2.0"
 
 projects[ding_event][type] = "module"
 projects[ding_event][download][type] = "git"
 projects[ding_event][download][url] = "git@github.com:ding2/ding_event.git"
-projects[ding_event][download][tag] = "v2.0.0"
+projects[ding_event][download][tag] = "7.x-2.2.0"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.3"
@@ -55,6 +55,12 @@ projects[media][patch][] = "https://www.drupal.org/files/issues/media_popup_trig
 projects[og][subdir] = "contrib"
 projects[og][version] = "2.5"
 ;projects[og][patch][] = "https://www.drupal.org/files/issues/entityreference_fields_do_not_validate-2249261-10.patch"
+; Fix using organic groups for relationships in views
+; https://www.drupal.org/node/1890370
+projects[og][patch][] = "https://www.drupal.org/files/issues/add-gid-to-relationship-field-1890370-34.patch"
+
+projects[realname][subdir] = "contrib"
+projects[realname][version] = "1.2"
 
 projects[profile2][subdir] = "contrib"
 projects[profile2][version] = "1.3"

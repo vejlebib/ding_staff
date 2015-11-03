@@ -2,7 +2,7 @@ api = 2
 core = 7.x
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.5"
+projects[ctools][version] = "1.9"
 
 projects[cs_adaptive_image][subdir] = "contrib"
 projects[cs_adaptive_image][version] = "1.0"
@@ -10,17 +10,17 @@ projects[cs_adaptive_image][version] = "1.0"
 projects[ding_base][type] = "module"
 projects[ding_base][download][type] = "git"
 projects[ding_base][download][url] = "git@github.com:ding2/ding_base.git"
-projects[ding_base][download][tag] = "7.x-2.2.0"
+projects[ding_base][download][tag] = "7.x-2.3.0"
 
 projects[ding_content][type] = "module"
 projects[ding_content][download][type] = "git"
 projects[ding_content][download][url] = "git@github.com:ding2/ding_content.git"
-projects[ding_content][download][tag] = "7.x-2.2.0"
+projects[ding_content][download][tag] = "7.x-2.3.0"
 
 projects[ding_event][type] = "module"
 projects[ding_event][download][type] = "git"
 projects[ding_event][download][url] = "git@github.com:ding2/ding_event.git"
-projects[ding_event][download][tag] = "7.x-2.2.0"
+projects[ding_event][download][tag] = "7.x-2.3.0"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.3"
@@ -41,7 +41,7 @@ projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-alpha3"
 
 projects[jquery_update][subdir] = "contrib"
-projects[jquery_update][version] = "2.4"
+projects[jquery_update][version] = "2.6"
 
 ; This version of media is tested to work with both images and videos.
 projects[media][type] = "module"
